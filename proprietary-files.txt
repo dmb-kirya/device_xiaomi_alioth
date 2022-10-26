@@ -1,4 +1,4 @@
-# Unpinned blobs from alioth_global-user 12 RKQ1.200826.002 V13.0.3.0.RKHMIXM release-keys
+# Unpinned blobs from alioth_eea-user 12 RKQ1.211001.001 V13.0.8.0.SKHEUXM release-keys
 
 # ACDB
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
@@ -340,7 +340,6 @@ vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin
 vendor/etc/camera/ai_enhance.dlc
 vendor/etc/camera/beauty_ui9_intelligent_params.config
 vendor/etc/camera/bokehParams.json
-vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/com.xiaomi.dcal.wu.fake
 vendor/etc/camera/com.xiaomi.dcal.wu.golden
 vendor/etc/camera/det_quantize.dlc

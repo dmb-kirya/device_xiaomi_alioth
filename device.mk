@@ -24,7 +24,8 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/camera/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
+    $(LOCAL_PATH)/camera/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt \
+    $(LOCAL_PATH)/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
