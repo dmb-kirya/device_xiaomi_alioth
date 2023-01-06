@@ -19,11 +19,6 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_BOOTLEG_ARCH := arm64
 BOOTLEGGERS_BUILD_TYPE := Unshishufied
 TARGET_SUPPORTS_QUICK_TAP := true
-#WITH_GAPPS := false
-
-# Bootleggers Maintainer
-#PRODUCT_BUILD_PROP_OVERRIDES += \
-#    ro.bl.maintainer=Kirya
 
 PRODUCT_NAME := bootleg_alioth
 PRODUCT_DEVICE := alioth
