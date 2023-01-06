@@ -9,7 +9,12 @@ include device/xiaomi/sm8250-common/BoardConfigCommon.mk
 
 DEVICE_PATH := device/xiaomi/alioth
 
+# Build broken stuff
 BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_USES_BUILD_COPY_HEADERS := true
+BUILD_BROKEN_ENFORCE_SYSPROP_OWNER := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
@@ -22,7 +27,7 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_alioth
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_alioth
 
 # Kernel
-TARGET_KERNEL_CONFIG := vendor/alioth_defconfig
+TARGET_KERNEL_CONFIG := alioth_defconfig
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := alioth,aliothin
