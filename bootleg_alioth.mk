@@ -8,13 +8,24 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Bootleggers stuff.
+$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 # Inherit from alioth device
 $(call inherit-product, device/xiaomi/alioth/device.mk)
 
-PRODUCT_NAME := lineage_alioth
+# Some Bootleggers stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_BOOTLEG_ARCH := arm64
+BOOTLEGGERS_BUILD_TYPE := Unshishufied
+TARGET_SUPPORTS_QUICK_TAP := true
+#WITH_GAPPS := false
+
+# Bootleggers Maintainer
+#PRODUCT_BUILD_PROP_OVERRIDES += \
+#    ro.bl.maintainer=Kirya
+
+PRODUCT_NAME := bootleg_alioth
 PRODUCT_DEVICE := alioth
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
