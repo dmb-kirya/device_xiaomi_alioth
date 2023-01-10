@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt
 
 # Google apps package
-include vendor/gapps/arm64/arm64-vendor.mk
+$(call inherit-product, vendor/gapps-bootleg/common/common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
